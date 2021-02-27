@@ -71,7 +71,7 @@ Close connection
 ```js
 mc.end(false, options)
     .then(_ => {
-        console.log('Publish works!')
+        console.log('Connection closed!')
     })
 ```
 
@@ -79,10 +79,7 @@ mc.end(false, options)
 Remove a message from the outgoingStore. The outgoing callback will be called with Error('Message removed') if the message is removed.
 
 ```js
-mc.removeOutgoingMessage(messageId, options)
-    .then(_ => {
-        console.log('Publish works!')
-    })
+mc.removeOutgoingMessage(messageId)
 ```
 
 #### #reconnect()
