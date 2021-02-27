@@ -1,0 +1,25 @@
+{
+  "name": "mqtt-js-client",
+  "version": "0.0.2",
+  "description": "MQTT Client Wrapper for NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "mqtt",
+    "wrapper",
+    "node",
+    "nodejs",
+    "event",
+    "emitter"
+  ],
+  "author": "Andersson Acosta",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "^4.2.6"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
