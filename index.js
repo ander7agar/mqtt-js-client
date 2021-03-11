@@ -101,7 +101,7 @@ class MqttClient extends EventEmitter {
                 if (err) {
                     reject(err)
                 } else {
-                    resolve();
+                    resolve(true);
                 }
             })
         });
