@@ -7,7 +7,7 @@ Easy MQTT Client
 
 ### Installation
 ```shell
-npm install mqtt-wrapper
+npm install mqtt-js-client
 ```
 
 ### How to use
