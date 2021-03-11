@@ -1,6 +1,7 @@
 # MQTT Wrapper
 ![Version](https://img.shields.io/npm/v/mqtt-js-client.svg?style=flat&logo=npm)
 ![License](https://img.shields.io/npm/l/mqtt-js-client)
+![Downloads](https://img.shields.io/npm/dm/mqtt-js-client)
 
 Easy MQTT Client
 
