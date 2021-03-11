@@ -1,6 +1,6 @@
 {
   "name": "mqtt-js-client",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "MQTT Client Wrapper for NodeJS",
   "main": "index.js",
   "scripts": {
