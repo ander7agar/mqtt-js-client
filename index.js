@@ -1,6 +1,19 @@
 const mqtt = require('mqtt');
 const EventEmitter = require('events').EventEmitter;
 
+/**
+ * @callback MessageCallback
+ * @param {string} topic
+ * @param {Buffer} message
+ * @param {Packet} packet
+ */
+
+/**
+ * @callback PacketCallback
+ * @param {Error} error
+ * @param {Packet} packet
+ */
+
 class MqttClient extends EventEmitter {
     constructor(broker, options) {
         super();
@@ -49,7 +62,7 @@ class MqttClient extends EventEmitter {
      *
      * @param {string} topic
      * @param {*} options
-     * @param {function} callback
+     * @param {MessageCallback} callback
      * @return {Promise<unknown>}
      */
     subscribe(topic, options, callback) {
@@ -136,7 +149,7 @@ class MqttClient extends EventEmitter {
     /**
      *
      * @param {Packet} packet
-     * @param {function} callback
+     * @param {PacketCallback} callback
      */
     handleMessage(packet, callback) {
         this.__client.handleMessage(packet, callback);
